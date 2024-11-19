@@ -1,3 +1,5 @@
+#darwin-rebuild switch --flake ~/.config/nix-darwin
+#nix-collect-garbage -d
 {
   description = "Mister Joessef nix-darwin system flake";
 
@@ -19,16 +21,18 @@
 	  pkgs.mkalias
 	  pkgs.tmux
 	  pkgs.iterm2
-	  pkgs.awscli
+	  pkgs.awscli2
 	  #pkgs.pyenv
 	  pkgs.python313
 	  pkgs.nodejs_20
 	  pkgs.yt-dlp
 	  pkgs.ffmpeg_7
-	  pkgs.oh-my-zsh
+	  #pkgs.oh-my-zsh
+	  pkgs.oh-my-posh
 	  pkgs.ollama
         ];
       
+
       homebrew = {
       	enable = true;
 	brews = [
@@ -126,6 +130,9 @@
 
       # Enable alternative shell support in nix-darwin.
       # programs.fish.enable = true;
+
+#      programs.oh-my-posh.enable = true;
+
 
       # Set Git commit hash for darwin-version.
       system.configurationRevision = self.rev or self.dirtyRev or null;

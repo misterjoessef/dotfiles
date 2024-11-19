@@ -1,0 +1,55 @@
+{
+  "editor.fontSize": 18,
+  "editor.codeActionsOnSave": {
+    "source.sortImports": "explicit"
+  },
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.minimap.enabled": false,
+  "editor.linkedEditing": true,
+  "editor.renderWhitespace": "none",
+  "editor.guides.indentation": false,
+  "editor.snippetSuggestions": "inline",
+  "editor.glyphMargin": false,
+  "editor.folding": true,
+  "files.associations": {
+    "*.env.local": "env"
+  },
+  "workbench.colorTheme": "Catppuccin Frappé",
+  "terminal.integrated.scrollback": 20000,
+  "terminal.integrated.fontFamily": "Hack Nerd Font",
+  "editor.accessibilitySupport": "off",
+
+  "workbench.sideBar.location": "right",
+  "workbench.statusBar.visible": false,
+  "workbench.panel.showLabels": false,
+
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "python.analysis.extraPaths": ["backend"],
+  "python.defaultInterpreterPath": "/Library/Frameworks/Python.framework/Versions/3.8/bin/python3",
+  "python.formatting.provider": "black",
+  "python.formatting.autopep8Args": ["--ignore", "E402"],
+  "rapidapi.terminalLink.enabled": false,
+  "explorer.compactFolders": false,
+  "window.zoomLevel": -1,
+  "rust-analyzer.check.targets": null,
+  "application.shellEnvironmentResolutionTimeout": 20,
+  "workbench.iconTheme": "material-icon-theme",
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[env]": {
+    "editor.defaultFormatter": "IronGeek.vscode-env"
+  },
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "amazonQ.suppressPrompts": {
+    "codeWhispererConnectionExpired": true
+  }
+}
