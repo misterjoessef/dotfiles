@@ -44,6 +44,7 @@
             enable = true;
             brews = [
               "mas"
+              "stripe-cli/stripe"
             ];
             casks = [
               "adobe-acrobat-pro"
@@ -102,6 +103,7 @@
               magnification = true;
               largesize = 32;
               minimize-to-application = true;
+              mru-spaces = false;
               show-process-indicators = true;
               show-recents = false;
               static-only = true;

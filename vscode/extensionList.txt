@@ -38,6 +38,7 @@ quicktype.quicktype
 rangav.vscode-thunder-client
 rapidapi.vscode-services
 rust-lang.rust-analyzer
+shd101wyy.markdown-preview-enhanced
 sodatea.velocity
 stripe.vscode-stripe
 techer.open-in-browser

@@ -1,13 +1,17 @@
 # dotfiles
 
-Manual setup to be automated:
+## First download [nix](https://nixos.org/download/) on your machine
 
-Ultimouse (has to be downloaded manually)
+then in this folder run `deployAll.sh` to deploy settings locally
 
-Manually set keyboard shortcut (mission control to f3)
+### Manual setup to be automated:
 
-Disable spotlight hotkey for Raycast
+##### Ultimouse (has to be downloaded manually)
 
-Show input menu in menu bar
+##### Manually set keyboard shortcut (mission control to f3)
 
-Add arabic language
+##### Disable spotlight hotkey for Raycast
+
+##### Show input menu in menu bar
+
+##### Add arabic language
