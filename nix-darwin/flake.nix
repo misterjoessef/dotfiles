@@ -38,6 +38,7 @@
             #pkgs.oh-my-zsh
             pkgs.oh-my-posh
             pkgs.ollama
+            #pkgs.open-webui
           ];
 
           homebrew = {
@@ -96,13 +97,14 @@
           '';
 
           #configuring system defaults
+          #https://mynixos.com/nix-darwin/options/system
           system.defaults = {
             dock = {
               autohide = true;
               orientation = "left";
               magnification = true;
               largesize = 32;
-              minimize-to-application = true;
+              minimize-to-application = false;
               mru-spaces = false;
               show-process-indicators = true;
               show-recents = false;
