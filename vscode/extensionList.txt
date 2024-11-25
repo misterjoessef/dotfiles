@@ -10,6 +10,8 @@ foxundermoon.shell-format
 github.copilot
 github.copilot-chat
 github.vscode-github-actions
+GraphQL.vscode-graphql
+GraphQL.vscode-graphql-syntax
 johnpapa.vscode-peacock
 k--kato.docomment
 kevinrose.vsc-python-indent

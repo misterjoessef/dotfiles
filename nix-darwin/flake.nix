@@ -1,4 +1,5 @@
 #darwin-rebuild switch --flake ~/.config/nix-darwin
+#darwin-rebuild switch --flake ./nix-darwin
 #nix-collect-garbage -d
 {
   description = "Mister Joessef nix-darwin system flake";
@@ -39,6 +40,7 @@
             pkgs.oh-my-posh
             pkgs.ollama
             #pkgs.open-webui
+            pkgs.stats
           ];
 
           homebrew = {
