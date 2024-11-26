@@ -26,21 +26,22 @@
           # List packages installed in system profile. To search by name, run:
           # $ nix-env -qaP | grep wget
           environment.systemPackages = [
-            pkgs.neovim
-            pkgs.mkalias
-            pkgs.tmux
-            pkgs.iterm2
             pkgs.awscli2
-            #pkgs.pyenv
-            pkgs.python313
-            pkgs.nodejs_20
-            pkgs.yt-dlp
             pkgs.ffmpeg_7
+            pkgs.iterm2
+            pkgs.mkalias
+            pkgs.neovim
+            pkgs.nodejs_20
             #pkgs.oh-my-zsh
             pkgs.oh-my-posh
             pkgs.ollama
+            pkgs.onnxruntime
             #pkgs.open-webui
+            #pkgs.pyenv
+            pkgs.python313
             pkgs.stats
+            pkgs.tmux
+            pkgs.yt-dlp
           ];
 
           homebrew = {
