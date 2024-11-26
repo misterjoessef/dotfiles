@@ -5,7 +5,10 @@
     "closer": "p:os",
     "pink": "#F5C2E7",
     "lavender": "#B4BEFE",
-    "blue": "#89B4FA"
+    "blue": "#89B4FA",
+    "pythongreen": "#1FF497",
+    "githubindiego": "#4078c0",
+    "purple": "#906cff"
   },
   "blocks": [
     {
@@ -36,6 +39,7 @@
       ],
       "type": "prompt"
     },
+
     {
       "alignment": "left",
       "segments": [
@@ -55,7 +59,13 @@
       "alignment": "right",
       "segments": [
         {
-          "foreground": "p:lavender",
+          "type": "python",
+          "style": "plain",
+          "foreground": "p:pythongreen",
+          "template": " ( {{ .Venv }}) "
+        },
+        {
+          "foreground": "p:githubindiego",
           "properties": {
             "branch_icon": "\ue725 ",
             "cherry_pick_icon": "\ue29b ",
