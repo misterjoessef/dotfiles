@@ -29,6 +29,7 @@
             pkgs.awscli2
             pkgs.ffmpeg_7
             pkgs.iterm2
+            pkgs.git-lfs
             pkgs.mkalias
             pkgs.neovim
             pkgs.nodejs_20
