@@ -2,7 +2,7 @@
 
 ## First download [nix](https://nixos.org/download/) on your machine
 
-then in this folder run `deployAll.sh` to deploy settings locally
+Then in this folder run `deployAll.sh` to deploy settings locally
 
 ### Manual setup to be automated:
 
@@ -18,4 +18,9 @@ then in this folder run `deployAll.sh` to deploy settings locally
 
 ##### Show input menu in menu bar
 
-##### Add arabic language
+##### Add Arabic language
+
+##### for vs code
+- update the user settings whoami with your username
+- enable custom css and js in the command
+
