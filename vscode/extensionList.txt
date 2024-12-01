@@ -1,5 +1,6 @@
 akamud.vscode-theme-onedark
 amazonwebservices.aws-toolkit-vscode
+be5invis.vscode-custom-css
 boto3typed.boto3-ide
 bradlc.vscode-tailwindcss
 catppuccin.catppuccin-vsc

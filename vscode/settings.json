@@ -20,18 +20,21 @@
   "terminal.integrated.scrollback": 20000,
   "terminal.integrated.fontFamily": "Hack Nerd Font",
   "editor.accessibilitySupport": "off",
-
   "workbench.sideBar.location": "right",
   "workbench.statusBar.visible": false,
   "workbench.panel.showLabels": false,
-
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
-  "python.analysis.extraPaths": ["backend"],
+  "python.analysis.extraPaths": [
+    "backend"
+  ],
   "python.defaultInterpreterPath": "/Library/Frameworks/Python.framework/Versions/3.8/bin/python3",
   "python.formatting.provider": "black",
-  "python.formatting.autopep8Args": ["--ignore", "E402"],
+  "python.formatting.autopep8Args": [
+    "--ignore",
+    "E402"
+  ],
   "rapidapi.terminalLink.enabled": false,
   "explorer.compactFolders": false,
   "window.zoomLevel": -1,
@@ -51,5 +54,9 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "amazonQ.suppressPrompts": {
     "codeWhispererConnectionExpired": true
-  }
+  },
+  "vscode_custom_css.imports": [
+    "file:///Users/$(whoami)/dotfiles/vscode/editor.css",
+    "file:///Users/$(whoami)/dotfiles/vscode/editor.js"
+  ]
 }
