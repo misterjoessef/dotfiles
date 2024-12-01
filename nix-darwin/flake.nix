@@ -40,6 +40,7 @@
             #pkgs.open-webui
             #pkgs.pyenv
             pkgs.python313
+            pkgs.ripgrep
             pkgs.stats
             pkgs.tmux
             pkgs.yt-dlp
@@ -54,6 +55,7 @@
             casks = [
               "adobe-acrobat-pro"
               "blender"
+              "bridge" # used for epic games asset 
               "rectangle"
               "visual-studio-code"
               "docker"
@@ -64,6 +66,7 @@
               "github"
               "ollama"
               "miniconda" # used for comfy ui
+              "nvidia-geforce-now" # used for cloud gaming
               "obs"
               "spotify"
               "steam"
