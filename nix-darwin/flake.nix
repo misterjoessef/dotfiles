@@ -50,7 +50,8 @@
             enable = true;
             brews = [
               "mas"
-              "stripe-cli/stripe"
+              "stripe-cli"
+              "typescript"
             ];
             casks = [
               "adobe-acrobat-pro"
@@ -62,6 +63,7 @@
               "google-chrome"
               "discord"
               "epic-games"
+              "protonvpn"
               "raycast"
               "github"
               "ollama"

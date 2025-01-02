@@ -54,9 +54,5 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "amazonQ.suppressPrompts": {
     "codeWhispererConnectionExpired": true
-  },
-  "vscode_custom_css.imports": [
-    "file:///Users/$(whoami)/dotfiles/vscode/editor.css",
-    "file:///Users/$(whoami)/dotfiles/vscode/editor.js"
-  ]
+  }
 }
