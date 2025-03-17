@@ -93,12 +93,8 @@
           };
 
           fonts.packages = [
-            (pkgs.nerdfonts.override {
-              fonts = [
-                "JetBrainsMono"
-                "Hack"
-              ];
-            })
+            pkgs.nerd-fonts.jetbrains-mono
+            pkgs.nerd-fonts.hack
           ];
 
           # adds symlink for all application installed through nix to be index in spotlight
