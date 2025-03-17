@@ -49,6 +49,7 @@
             pkgs.stats
             pkgs.tmux
             pkgs.twine
+            pkgs.uv
             pkgs.yt-dlp
           ];
 
@@ -83,7 +84,6 @@
             ];
             masApps = {
               "Capcut" = 1500855883;
-              "Claude" = 6473753684;
               "Messenger" = 1480068668;
               "Slack" = 803453959;
               "Telegram" = 747648890;
