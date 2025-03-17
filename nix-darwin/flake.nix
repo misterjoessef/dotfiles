@@ -1,5 +1,8 @@
 #darwin-rebuild switch --flake ~/.config/nix-darwin
 #darwin-rebuild switch --flake ./nix-darwin
+#cd into nix-darwin && darwin-rebuild switch --flake ".#Misters-Mac-mini"
+#https://mynixos.com/nix-darwin/option/system.defaults.finder.AppleShowAllExtensions
+#https://search.nixos.org/packages
 #nix-collect-garbage -d
 {
   description = "Mister Joessef nix-darwin system flake";
@@ -27,6 +30,7 @@
           # $ nix-env -qaP | grep wget
           environment.systemPackages = [
             pkgs.awscli2
+            pkgs.bun
             pkgs.ffmpeg_7
             pkgs.iterm2
             pkgs.git-lfs
@@ -40,9 +44,11 @@
             #pkgs.open-webui
             #pkgs.pyenv
             pkgs.python313
+            pkgs.python312Packages.litellm
             pkgs.ripgrep
             pkgs.stats
             pkgs.tmux
+            pkgs.twine
             pkgs.yt-dlp
           ];
 
@@ -74,15 +80,15 @@
               "steam"
               "unity-hub"
               "zoom"
-
             ];
             masApps = {
               "Capcut" = 1500855883;
+              "Claude" = 6473753684;
               "Messenger" = 1480068668;
               "Slack" = 803453959;
-              "Xcode" = 497799835;
-              "Trello" = 1278508951;
               "Telegram" = 747648890;
+              "Trello" = 1278508951;
+              "Xcode" = 497799835;
             };
           };
 
