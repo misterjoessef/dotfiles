@@ -21,6 +21,14 @@ Then in this folder run `deployAll.sh` to deploy settings locally
 ##### Add Arabic language
 
 ##### for vs code
+
 - update the user settings whoami with your username
 - enable custom css and js in the command
 
+##### if you are using a windows keyboard
+
+go to system settings > keyboard > keyboard shortcuts > select modifier keys from the left pane > swap option with command and command with option
+
+#### if you are NOT using aerospace
+
+go to system settings > desktop & dock > go to the bottom and check "Group Windows By Application"

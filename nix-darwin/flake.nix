@@ -1,6 +1,6 @@
 #darwin-rebuild switch --flake ~/.config/nix-darwin
 #darwin-rebuild switch --flake ./nix-darwin
-#cd into nix-darwin && darwin-rebuild switch --flake ".#Misters-Mac-mini"
+#cd nix-darwin && darwin-rebuild switch --flake ".#Misters-Mac-mini"
 #https://mynixos.com/nix-darwin/option/system.defaults.finder.AppleShowAllExtensions
 #https://search.nixos.org/packages
 #nix-collect-garbage -d
@@ -29,10 +29,12 @@
           # List packages installed in system profile. To search by name, run:
           # $ nix-env -qaP | grep wget
           environment.systemPackages = [
+            pkgs.aerospace
             pkgs.awscli2
             pkgs.bun
             pkgs.ffmpeg_7
             pkgs.iterm2
+            pkgs.gh
             pkgs.git-lfs
             pkgs.mkalias
             pkgs.neovim
@@ -85,6 +87,7 @@
             masApps = {
               "Capcut" = 1500855883;
               "Messenger" = 1480068668;
+              "MindNodeClassic" = 1289197285;
               "Slack" = 803453959;
               "Telegram" = 747648890;
               "Trello" = 1278508951;
@@ -105,6 +108,8 @@
             app_target="$app_target_base/$moniker"
             mkdir -p "$app_target"
             ${pkgs.rsync}/bin/rsync --archive --checksum --chmod=-w --copy-unsafe-links --delete "$apps_source/" "$app_target"
+            echo "Updating Mac App Store apps..."
+            /opt/homebrew/bin/mas upgrade
           '';
 
           #configuring system defaults
@@ -112,11 +117,12 @@
           system.defaults = {
             dock = {
               autohide = true;
-              orientation = "left";
-              magnification = true;
+              expose-group-apps = true;
               largesize = 32;
+              magnification = true;
               minimize-to-application = false;
               mru-spaces = false;
+              orientation = "left";
               show-process-indicators = true;
               show-recents = false;
               static-only = true;

@@ -13,9 +13,7 @@
   "transient_prompt": {
     "template": "❯ ",
     "foreground": "#B48EAD",
-    "foreground_templates": [
-      "{{ if gt .Code 0 }}#BF616A{{ end }}"
-    ]
+    "foreground_templates": ["{{ if gt .Code 0 }}#BF616A{{ end }}"]
   },
   "console_title_template": "{{if .Root}}(Admin){{end}} {{.PWD}}",
   "blocks": [
@@ -78,7 +76,7 @@
           "properties": {
             "cache_duration": "none"
           },
-          "template": " (\ue235 {{ .Venv }}) ",
+          "template": "\ue235 {{ .Venv }} ({{ .Major }}.{{ .Minor }}) ",
           "foreground": "p:pythongreen",
           "type": "python",
           "style": "plain"
@@ -117,9 +115,7 @@
           "foreground": "#B48EAD",
           "type": "status",
           "style": "plain",
-          "foreground_templates": [
-            "{{ if gt .Code 0 }}#BF616A{{ end }}"
-          ]
+          "foreground_templates": ["{{ if gt .Code 0 }}#BF616A{{ end }}"]
         }
       ],
       "newline": true

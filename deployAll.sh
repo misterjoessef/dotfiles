@@ -7,3 +7,8 @@ tmux source ~/.config/tmux/tmux.conf
 
 cd vscode
 ./deploy.sh
+
+cd -
+
+cd aerospace
+./deploy.sh
