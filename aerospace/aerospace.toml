@@ -132,7 +132,7 @@ automatically-unhide-macos-hidden-apps = false
     alt-c = 'workspace C'
     alt-d = 'workspace D'
     alt-e = 'workspace E'
-    alt-f = 'workspace F'
+    #alt-f = 'workspace F'
     alt-g = 'workspace G'
     alt-i = 'workspace I'
     alt-m = 'workspace M'
@@ -165,7 +165,7 @@ automatically-unhide-macos-hidden-apps = false
     alt-shift-c = 'move-node-to-workspace C'
     alt-shift-d = 'move-node-to-workspace D'
     alt-shift-e = 'move-node-to-workspace E'
-    alt-shift-f = 'move-node-to-workspace F'
+    #alt-shift-f = 'move-node-to-workspace F'
     alt-shift-g = 'move-node-to-workspace G'
     alt-shift-i = 'move-node-to-workspace I'
     alt-shift-m = 'move-node-to-workspace M'
@@ -212,26 +212,6 @@ automatically-unhide-macos-hidden-apps = false
     shift-down = ['volume set 0', 'mode main']
 
 [[on-window-detected]]
-    if.app-id = 'com.google.Chrome'
-    run = 'move-node-to-workspace W' # mnemonics W - Web browser
-
-[[on-window-detected]]
-    if.app-id = 'com.microsoft.VSCode'
-    run = 'move-node-to-workspace C' # mnemonics C - Code
-
-[[on-window-detected]]
-    if.app-id = 'com.spotify.client'
-    run = 'move-node-to-workspace M' # mnemonics M - Music
-
-[[on-window-detected]]
-    if.app-id = 'com.github.GitHubClient'
-    run = 'move-node-to-workspace G' # mnemonics G - Git hub
-
-[[on-window-detected]]
-    if.app-id = 'com.googlecode.iterm2'
-    run = 'move-node-to-workspace T' # mnemonics T - Terminal
-
-[[on-window-detected]]
     if.app-id = 'com.openai.chat'
     run = 'move-node-to-workspace A' # mnemonics A - Assistant
 
@@ -239,3 +219,48 @@ automatically-unhide-macos-hidden-apps = false
     if.app-id = 'com.anthropic.claudefordesktop'
     run = 'move-node-to-workspace A' # mnemonics A - Assistant
 
+[[on-window-detected]]
+    if.app-id = 'com.hnc.Discord'
+    run = 'move-node-to-workspace D' # mnemonics A - Assistant
+
+[[on-window-detected]]
+    if.app-id = 'com.microsoft.VSCode'
+    run = 'move-node-to-workspace C' # mnemonics C - Code
+
+[[on-window-detected]]
+    if.app-id = 'com.github.GitHubClient'
+    run = 'move-node-to-workspace G' # mnemonics G - Git hub
+
+[[on-window-detected]]
+    if.app-id = 'com.facebook.archon'
+    run = 'move-node-to-workspace M' # mnemonics M - Messenger
+
+[[on-window-detected]]
+    if.app-id = 'com.spotify.client'
+    run = 'move-node-to-workspace M' # mnemonics M - Music
+    
+[[on-window-detected]]
+    if.app-id = 'com.apple.Music'
+    run = 'move-node-to-workspace M' # mnemonics M - Music
+
+[[on-window-detected]]
+    if.app-id = 'com.apple.Notes'
+    run = 'move-node-to-workspace N' # mnemonics N - Notes
+
+[[on-window-detected]]
+    if.app-id = 'com.tinyspeck.slackmacgap'
+    run = 'move-node-to-workspace S' # mnemonics S - Slack
+
+[[on-window-detected]]
+    if.app-id = 'com.googlecode.iterm2'
+    run = 'move-node-to-workspace T' # mnemonics T - Terminal
+
+[[on-window-detected]]
+    if.app-id = 'com.apple.Terminal'
+    run = 'move-node-to-workspace T' # mnemonics T - Terminal
+
+[[on-window-detected]]
+    if.app-id = 'com.google.Chrome'
+    run = 'move-node-to-workspace W' # mnemonics W - Web browser
+
+#osascript -e 'id of app "Terminal"'
