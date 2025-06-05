@@ -26,6 +26,10 @@
         { pkgs, config, ... }:
         {
           nixpkgs.config.allowUnfree = true;
+          
+          # Set the primary user (REQUIRED for user-specific configurations)
+          system.primaryUser = "misterjoessef";
+          
           # List packages installed in system profile. To search by name, run:
           # $ nix-env -qaP | grep wget
           environment.systemPackages = [
@@ -39,6 +43,7 @@
             pkgs.git-lfs
             pkgs.mkalias
             pkgs.neovim
+            pkgs.notion-app
             pkgs.nodejs_20
             #pkgs.oh-my-zsh
             pkgs.oh-my-posh
@@ -101,11 +106,12 @@
             pkgs.nerd-fonts.hack
           ];
 
-          # adds symlink for all application installed through nix to be index in spotlight
-          system.activationScripts.postUserActivation.text = ''
+          # FIXED: Use system.activationScripts.applications instead of postUserActivation
+          # This creates symlinks for Nix applications to be indexed in Spotlight
+          system.activationScripts.applications.text = ''
             apps_source="${config.system.build.applications}/Applications"
             moniker="Nix Trampolines"
-            app_target_base="$HOME/Applications"
+            app_target_base="/Users/${config.system.primaryUser}/Applications"
             app_target="$app_target_base/$moniker"
             mkdir -p "$app_target"
             ${pkgs.rsync}/bin/rsync --archive --checksum --chmod=-w --copy-unsafe-links --delete "$apps_source/" "$app_target"
